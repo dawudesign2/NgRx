@@ -1,6 +1,6 @@
 <div class="container">
     <h1 class="lead">My First Angular 2 App</h1>
-    <button 
-        (click)="changeName()"
-        class="btn btn-primary">changeName</button>
+    <h2 class="lead">Name : {{(users | async)?.name }} </h2>
+    <h3 class="lead">Admin : {{(users | async)?.isAdmin }} </h3>
+    <button (click)="changeName()" class="btn btn-primary">changeName</button>
 </div>
